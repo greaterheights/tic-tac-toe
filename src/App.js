@@ -10,9 +10,14 @@ const Wrapper = styled.div`
 
 const StyledButton = styled.button`
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   font-size: 1em;
   cursor: pointer;
+`;
+
+const StyledDiv = styled.div`
+  font-size: 2rem;
+  margin: 20px 0 0 0;
 `;
 
 const App = () => {
@@ -45,7 +50,9 @@ const App = () => {
         <Wrapper>
             <h1>Tic Tac Toe</h1>
             <Board board={board} onClick={handleClick} />
-            {winner && <p>{winner} wins!</p>}
+
+            {winner && <StyledDiv> {winner} wins!</StyledDiv>}
+
             <StyledButton onClick={handleReset}>Reset</StyledButton>
         </Wrapper>
     );
