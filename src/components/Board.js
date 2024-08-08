@@ -3,9 +3,10 @@ import styled from "styled-components";
 import Square from "./Square";
 
 const StyledBoard = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    background: antiquewhite;
 `;
 
 const Board = ({ board, onClick }) => {
