@@ -27,6 +27,7 @@ Clone the repository:
 You can now run your application and tests:
 
 -   **To run the application**: `npm start`
+-   **Install all package**: `npm install`
 -   **To run tests**: `npm test`
 
 ### Final Deliverables
